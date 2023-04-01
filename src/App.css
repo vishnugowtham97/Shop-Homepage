@@ -1,0 +1,44 @@
+.a1 {
+  top: 0.5rem; right: 0.5rem;
+}
+
+.a2 {
+  top: 0.5rem; right: 0.5rem;
+}
+
+.a3 {
+  top: 0.5rem; right: 0.5rem;
+}
+
+.a4 {
+  top: 0.5rem; right: 0.5rem;
+}
+
+.banner {
+  background-image: url('https://wallpaperaccess.com/full/1317087.jpg');
+  padding: 50%;
+  height: 75%;
+  border-radius: 5%;
+  box-sizing: border-box;
+}
+
+.fonts-style-1 {
+  font-style: italic;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.fonts-style-2 {
+  font-family:cursive;
+}
+
+.s1 {
+  background-color:rgb(250, 197, 98);
+}
+
+.filled {
+  color: gold;
+}
+
+.unfilled {
+  color: gray;
+}
