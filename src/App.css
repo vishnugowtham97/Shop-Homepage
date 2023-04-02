@@ -53,3 +53,13 @@
   font-size:xx-large;
 }
 
+.card-footer {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.text-center {
+  box-sizing: border-box;
+  margin: 2%;
+}
