@@ -1,7 +1,13 @@
 import './App.css';
-import Rating from './star-rating/rating';
+import React, { useState } from "react";
+import StarRating from './star-rating/StarRating';
 
 function App() {
+    const [rating, setRating] = useState(0);
+
+  function handleRatingChange(newRating) {
+    setRating(newRating);
+  }
   return (
     <div className="App">
           <body>
@@ -54,10 +60,13 @@ function App() {
                             <img className="card-img-top" src="https://wallpaperaccess.com/full/1739077.jpg" alt="..." />
                             {/* <!-- Product details--> */}
                             <div className="card-body p-4">
-                                <div className="text-center">
+                                <div className="text-center"><hr/>
                                     {/* <!-- Product name--> */}
                                     <h5 className="fw-bolder">Idli</h5>
-                                    <Rating/>
+                                    <div>
+                                          <StarRating onChange={handleRatingChange} />
+                                         <h6>Click here to rating</h6>
+                                    </div>
                                     {/* <!-- Product price--> */}
                                     ₹25.00
                                 </div>
@@ -75,12 +84,16 @@ function App() {
                             {/* <!-- Product image--> */}
                             <img className="card-img-top" src="https://wallpaperaccess.com/full/1739050.jpg" alt="..." />
                             {/* <!-- Product details--> */}
-                            <div className="card-body p-4">
-                                <div className="text-center">
+                            <div className="card-body p-4"><br/><br/>
+                                <div className="text-center"><hr/>
                                     {/* <!-- Product name--> */}
                                     <h5 className="fw-bolder">Masala Dosai</h5>
                                     {/* <!-- Product reviews--> */}
-                                    <Rating/>
+                                    <div>
+                                         <StarRating onChange={handleRatingChange} />
+                                         <h6>Click here to rating</h6>
+                                    </div>
+
                                     {/* <!-- Product price--> */}
                                     <span className="text-muted text-decoration-line-through">₹40.00 </span>
                                     ₹35.00
@@ -99,11 +112,15 @@ function App() {
                             {/* <!-- Product image--> */}
                             <img className="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZLe1X36LOW4HryD061ozoSay-9_gZXsmCQ&usqp=CAU" alt="..." />
                             {/* <!-- Product details--> */}
-                            <div className="card-body p-4">
-                                <div className="text-center">
+                            <div className="card-body p-4"><br/>
+                                <div className="text-center"><hr/>
                                     {/* <!-- Product name--> */}
                                     <h5 className="fw-bolder">Pongal</h5>
-                                    <Rating/>
+                                    <div>
+                                        <StarRating onChange={handleRatingChange} />
+                                        <h6>Click here to rating</h6>
+                                    </div>
+
                                     {/* <!-- Product price--> */}
                                     <span className="text-muted text-decoration-line-through">₹50.00</span>
                                     ₹25.00
@@ -122,11 +139,15 @@ function App() {
                             <img className="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBSO78QwsmVMRpZWApWHJBxHsjsyf8amzPCg&usqp=CAU" alt="..." />
                             {/* <!-- Product details--> */}
                             <div className="card-body p-4">
-                                <div className="text-center">
+                                <div className="text-center"><hr/>
                                     {/* <!-- Product name--> */}
                                     <h5 className="fw-bolder">Full Meals</h5>
                                     {/* <!-- Product reviews--> */}
-                                    <Rating/>
+                                    <div>
+                                         <StarRating onChange={handleRatingChange} />
+                                         <h6>Click here to rating</h6>
+                                    </div>
+
                                     {/* <!-- Product price--> */}
                                     ₹100.00
                                 </div>
@@ -145,10 +166,14 @@ function App() {
                             <img className="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6W4Rw3PLT0kgkkolEXlwRVrK3-ztm48Tlvw&usqp=CAU" alt="..." />
                             {/* <!-- Product details--> */}
                             <div className="card-body p-4">
-                                <div className="text-center">
+                                <div className="text-center"><hr/>
                                     {/* <!-- Product name--> */}
                                     <h5 className="fw-bolder">Parotta</h5>
-                                    <Rating/>
+                                    <div>
+                                         <StarRating onChange={handleRatingChange} />
+                                         <h6>Click here to rating</h6>
+                                    </div>
+
                                     {/* <!-- Product price--> */}
                                     <span className="text-muted text-decoration-line-through">₹50.00</span>
                                     ₹40.00
@@ -167,10 +192,16 @@ function App() {
                             <img className="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHW5HdTxhqll0if9OkyTZbBIywYYO36iAo5Q&usqp=CAU" alt="..." />
                             {/* <!-- Product details--> */}
                             <div className="card-body p-4">
-                                <div className="text-center">
+                                <div className="text-center"><hr/>
+
+
                                     {/* <!-- Product name--> */}
                                     <h5 className="fw-bolder">Crispy Fried Chicken</h5>
-                                    <Rating/>
+                                    <div>
+                                         <StarRating onChange={handleRatingChange} />
+                                         <h6>Click here to rating</h6>
+                                    </div>
+
                                     {/* <!-- Product price--> */}
                                     ₹200.00
                                 </div>
@@ -189,12 +220,16 @@ function App() {
                             {/* <!-- Product image--> */}
                             <img className="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqk8cRkWZ-W0woXgzvKjex24ZuKHuf0X8Jqg&usqp=CAU" alt="..." />
                             {/* <!-- Product details--> */}
-                            <div className="card-body p-4">
-                                <div className="text-center">
+                            <div className="card-body p-4"><br/>
+                                <div className="text-center"><hr/>
                                     {/* <!-- Product name--> */}
                                     <h5 className="fw-bolder">Chettinad fish Fry</h5>
                                     {/* <!-- Product reviews--> */}
-                                    <Rating/>
+                                    <div>
+                                         <StarRating onChange={handleRatingChange} />
+                                         <h6>Click here to rating</h6>
+                                    </div>
+
                                     {/* <!-- Product price--> */}
                                     <span className="text-muted text-decoration-line-through">₹180.00</span>
                                     ₹160.00
@@ -213,11 +248,15 @@ function App() {
                             <img className="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWR3clogXOORvma-5MEf7tmZ-EWPA7amMUqQ&usqp=CAU" alt="..." />
                             {/* <!-- Product details--> */}
                             <div className="card-body p-4">
-                                <div className="text-center">
+                                <div className="text-center"><hr/>
                                     {/* <!-- Product name--> */}
                                     <h5 className="fw-bolder">Chicken Nugget</h5>
                                     {/* <!-- Product reviews--> */}
-                                    <Rating/>
+                                    <div>
+                                         <StarRating onChange={handleRatingChange} />
+                                         <h6>Click here to rating</h6>
+                                    </div>
+
                                     {/* <!-- Product price--> */}
                                     ₹190.00
                                 </div>

@@ -17,7 +17,7 @@
 .banner {
   background-image: url('https://wallpaperaccess.com/full/1317087.jpg');
   padding: 50%;
-  height: 75%;
+  height: 50%;
   border-radius: 5%;
   box-sizing: border-box;
 }
@@ -42,3 +42,14 @@
 .unfilled {
   color: gray;
 }
+
+.star-filled {
+  color: gold;
+  font-size: xx-large;
+}
+
+.star-unfilled {
+  color: gray;
+  font-size:xx-large;
+}
+
