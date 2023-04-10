@@ -9,7 +9,7 @@ function StarRating({ onChange }) {
   }
 
   return (
-    <div>
+    <div className="star-rating">
       {[...Array(5)].map((_, index) => (
         <span
           key={index}

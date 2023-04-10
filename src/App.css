@@ -1,21 +1,25 @@
 .a1 {
-  top: 0.5rem; right: 0.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 .a2 {
-  top: 0.5rem; right: 0.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 .a3 {
-  top: 0.5rem; right: 0.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 .a4 {
-  top: 0.5rem; right: 0.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 .banner {
-  background-image: url('https://wallpaperaccess.com/full/1317087.jpg');
+  background-image: url("https://wallpaperaccess.com/full/1317087.jpg");
   padding: 50%;
   height: 50%;
   border-radius: 5%;
@@ -24,15 +28,15 @@
 
 .fonts-style-1 {
   font-style: italic;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .fonts-style-2 {
-  font-family:cursive;
+  font-family: cursive;
 }
 
 .s1 {
-  background-color:rgb(250, 197, 98);
+  background-color: rgb(250, 197, 98);
 }
 
 .filled {
@@ -50,7 +54,7 @@
 
 .star-unfilled {
   color: gray;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
 .card-footer {
@@ -62,4 +66,8 @@
 .text-center {
   box-sizing: border-box;
   margin: 2%;
+}
+
+.star-rating:hover {
+  cursor: pointer;
 }
